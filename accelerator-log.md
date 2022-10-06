@@ -3,7 +3,7 @@
 ## Options
 ```json
 {
-  "projectName" : "tanzu-java-web-app-demo",
+  "projectName" : "tanzu-java-web-app",
   "repositoryPrefix" : "dev.local"
 }
 ```
@@ -88,7 +88,7 @@
 ┃ ┃ ┃ ┃ ┏ engine.transformations[0].merge.transformations[0].sources[1].<combo>.transformations[1] (Chain)
 ┃ ┃ ┃ ┃ ┃  Info Running Chain(ReplaceText, ReplaceText)
 ┃ ┃ ┃ ┃ ┃ ┏ engine.transformations[0].merge.transformations[0].sources[1].<combo>.transformations[1].transformations[0] (ReplaceText)
-┃ ┃ ┃ ┃ ┃ ┗  Info Will replace [tanzu-java-web-app->tanzu-java-web-app-d...(truncated)]
+┃ ┃ ┃ ┃ ┃ ┗  Info Will replace [tanzu-java-web-app->tanzu-java-web-app]
 ┃ ┃ ┃ ┃ ┃ ┏ engine.transformations[0].merge.transformations[0].sources[1].<combo>.transformations[1].transformations[1] (ReplaceText)
 ┃ ┃ ┃ ┗ ┗ ┗  Info Will replace [your-registry.io/project->dev.local]
 ┃ ┃ ┃ ┏ engine.transformations[0].merge.transformations[0].sources[2] (Combo)
@@ -118,7 +118,7 @@
 ┃ ┃ ┃ ┃ ┏ engine.transformations[0].merge.transformations[0].sources[2].<combo>.transformations[1] (Chain)
 ┃ ┃ ┃ ┃ ┃  Info Running Chain(ReplaceText)
 ┃ ┃ ┃ ┃ ┃ ┏ engine.transformations[0].merge.transformations[0].sources[2].<combo>.transformations[1].transformations[0] (ReplaceText)
-┃ ┃ ┃ ┗ ┗ ┗  Info Will replace [tanzu-java-web-app->tanzu-java-web-app-d...(truncated)]
+┃ ┃ ┃ ┗ ┗ ┗  Info Will replace [tanzu-java-web-app->tanzu-java-web-app]
 ┃ ┃ ┃ ┏ engine.transformations[0].merge.transformations[0].sources[3] (Combo)
 ┃ ┃ ┃ ┃  Info Combo running as Chain(Include, Chain(chain))
 ┃ ┃ ┃ ┃ engine.transformations[0].merge.transformations[0].sources[3].<combo> (Chain)
@@ -146,7 +146,7 @@
 ┃ ┃ ┃ ┃ ┏ engine.transformations[0].merge.transformations[0].sources[3].<combo>.transformations[1] (Chain)
 ┃ ┃ ┃ ┃ ┃  Info Running Chain(ReplaceText, RewritePath)
 ┃ ┃ ┃ ┃ ┃ ┏ engine.transformations[0].merge.transformations[0].sources[3].<combo>.transformations[1].transformations[0] (ReplaceText)
-┃ ┃ ┃ ┃ ┃ ┗  Info Will replace [tanzu-java-web-app->tanzu-java-web-app-d...(truncated)]
+┃ ┃ ┃ ┃ ┃ ┗  Info Will replace [tanzu-java-web-app->tanzu-java-web-app]
 ┃ ┃ ┃ ┃ ┃ ┏ engine.transformations[0].merge.transformations[0].sources[3].<combo>.transformations[1].transformations[1] (RewritePath)
 ┃ ┃ ┗ ┗ ┗ ┗ Debug Path 'catalog/catalog-info.yaml' matched '^(?<folder>.*/)?(?<filename>([^/]+?|)(?=(?<ext>\.[^/.]*)?)$)' with groups {ext=.yaml, folder=catalog/, filename=catalog-info.yaml, g0=catalog/catalog-info.yaml, g1=catalog/, g2=catalog-info.yaml, g3=catalog-info.yaml, g4=.yaml} and was rewritten to 'catalog-info.yaml'
 ┃ ┗ ╺ engine.transformations[0].merge.transformations[1] (UniquePath)
