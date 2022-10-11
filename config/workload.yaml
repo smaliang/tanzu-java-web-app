@@ -1,11 +1,16 @@
 apiVersion: carto.run/v1alpha1
 kind: Workload
 metadata:
-  name: tanzu-java-web-app-demo
+  name: tanzu-java-web-app
   labels:
     apps.tanzu.vmware.com/workload-type: web
+<<<<<<< HEAD
     apps.tanzu.vmware.com/has-tests: 'true'
     app.kubernetes.io/part-of: tanzu-java-web-app-demo
+=======
+    apps.tanzu.vmware.com/has-tests: true
+    app.kubernetes.io/part-of: tanzu-java-web-app
+>>>>>>> 91368663b0357f949976b1f1aeacf21063a309f9
 spec:
   params:
   - name: annotations
@@ -13,6 +18,6 @@ spec:
       autoscaling.knative.dev/minScale: "1"
   source:
     git:
-      url: https://github.com/sample-accelerators/tanzu-java-web-app-demo
+      url: https://github.com/sample-accelerators/tanzu-java-web-app
       ref:
         branch: main
